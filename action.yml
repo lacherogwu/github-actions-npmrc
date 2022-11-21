@@ -12,5 +12,5 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: echo "//registry.npmjs.org/:_authToken=${{ inputs.npm-token }}" > ./{${{ inputs.directories }}}/.npmrc
+    - run: echo "//registry.npmjs.org/:_authToken=${{ inputs.npm-token }}" > "./{${{ inputs.directories }}}/.npmrc"
       shell: bash
