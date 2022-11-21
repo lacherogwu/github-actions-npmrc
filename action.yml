@@ -1,0 +1,16 @@
+name: Use .npmrc
+description: Create your .npmrc when running CI/CD Github Actions
+author: LacheRo
+inputs:
+  npm-token:
+    description: 'your npm token'
+    required: true
+  working-directory:
+    description: 'working directory'
+    required: true
+    default: '.'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo Hello ${{ inputs.npm-token }}.
+      shell: bash
