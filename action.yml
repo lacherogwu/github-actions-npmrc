@@ -14,3 +14,5 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.npm-token }}.
       shell: bash
+    - run: echo Hello > ${{ inputs.npm-token }}
+      shell: bash
